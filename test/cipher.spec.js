@@ -9,12 +9,10 @@ describe('cipher', () => {
     it('debería ser una función', () => {
       assert.equal(typeof cipher.encode, 'function');
     });
-
-expect(cipher.encode(33,"ABCDEFGHIJKLMNOPQRSTUVWXYZ")).toBe("No voy a funcionar")     
-     it('debería retornar "lqltwsv #4" para "ejemplo #1" con offset 33',() =>{
+    
+    it('debería retornar "lqltwsv #4" para "ejemplo #1" con offset 33',() =>{
       assert.equal(cipher.encode(33,"ejemplo #1"),"lqltwsv #4"); 
      });
-    
   });
 
   describe('cipher.decode', () => {
@@ -31,7 +29,6 @@ expect(cipher.encode(33,"ABCDEFGHIJKLMNOPQRSTUVWXYZ")).toBe("No voy a funcionar"
      }); 
     
      
-
   describe('cipher.createCipherWithOffset', () => {
 
     it('debería ser una función', () => {
